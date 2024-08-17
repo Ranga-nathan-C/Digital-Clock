@@ -1,0 +1,56 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298); 
+    color: white;
+}
+
+.clock-container {
+    height: 100vh;
+    text-align: center;
+}
+
+.clock {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+#time {
+    font-size: 5rem;
+    letter-spacing: 0.1rem;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#date, #greeting {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.morning {
+    background: linear-gradient(to bottom, rgba(255, 255, 0, 0.822), #ffffff);
+}
+
+.afternoon {
+    background: linear-gradient(to bottom, #FFD194, #70E1F5);
+}
+
+.evening {
+    background: linear-gradient(to bottom, #2980B9, #6DD5FA);
+}
+
+.night {
+    background: linear-gradient(to bottom, #2C3E50, #4CA1AF);
+}
+
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #fff, 0 0 30px #00bbff, 0 0 40px #416eeb, 0 0 50px #0008ff;
+    }
+    to {
+        text-shadow: 0 0 30px #fff, 0 0 40px #0adbfc, 0 0 50px #0ea7e9, 0 0 60px #0048ff;
+    }
+}
